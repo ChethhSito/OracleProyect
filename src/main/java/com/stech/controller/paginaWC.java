@@ -14,5 +14,9 @@ public class paginaWC {
     public String PageAddresses() {
         return "paginas/direcciones";
     }
+    @GetMapping("/bienvenida")
+    public String PageWelcome() {
+        return "paginas/bienvenida";
+    }
     
 }
