@@ -1,0 +1,85 @@
+body{
+    background-color: darkgoldenrod ;
+    font-family: sans-serif;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.nav-header {
+    display: flex;
+    height: 70px;
+    padding: 0;
+    justify-content: end; 
+    align-items: center;
+    width: 90%;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+
+.main-tablas{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+}
+.ultablas li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+}
+.ultablas li {
+    display: inline-block;
+}
+.navcrud {
+    width: 200px;
+    background-color: black;
+     min-height: 100vh;
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.ulcrud {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ulcrud li {
+    margin: 15px 0;
+    text-align: center;
+    justify-items: center;
+    color: white;
+    
+}
+
+.ulcrud li a {
+    
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+section{
+    flex: 1;
+    padding: 40px;
+    min-height: 100vh;
+}
+table {
+    margin: 2rem auto;
+    width: 90%;
+    background: burlywood;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
