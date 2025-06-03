@@ -1,12 +1,12 @@
 body{
-    background-color: #cad2c5 ;
+    background-color: #bee9e8 ;
     font-family: sans-serif;
     margin: auto;
     overflow: hidden;
     width: 100%;
 }
 .nav-header {
-    background-color: #2F3E46;
+    background-color: #1b4965;
     display: flex;
     height: 70px;
     padding: 0;
@@ -53,7 +53,7 @@ nav ul {
 }
 .navcrud {
     width: 200px;
-    background-color: #354f52;
+    background-color: #62b6cb;
     min-height: 100vh;
     padding-top: 30px;
     box-sizing: border-box;
@@ -83,11 +83,12 @@ nav ul {
     padding: 10px;
     border-radius: 8px;
     color: black;
-    background-color:#CAD2C5;
+    background-color:#cae9ff;
     transition: background 0.2s, color 0.2s;
 }
 .ulcrud li a:hover{
-    background-color: #84A98C;
+    background-color: #1b4965;
+    color: white;
 }
 section{
     flex: 1;
