@@ -31,15 +31,3 @@ document.getElementById('clienteForm').addEventListener('submit', function(event
     this.reset(); // Limpia el formulario
 }
 );
-document.addEventListener('DOMContentLoaded', function () {
-  const inputId = document.getElementById('clienteRefe');
-  const formulario = document.getElementById('clienteForm');
-    
-  inputId.addEventListener('input', function () {
-    if (inputId.value.trim() !== '') {
-      formulario.style.display = 'block';
-    } else {
-      formulario.style.display = 'none';
-    }
-  });
-});

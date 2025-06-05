@@ -5,7 +5,7 @@
     <meta name="Juan" content="Java" />
     <title>Agregar Cliente</title>
     
-    <link rel="stylesheet" href="/css/addCli.css">
+    <link rel="stylesheet" href="/css/editCli.css">
 </head>
 <body>
     <header>
@@ -28,10 +28,13 @@
 
         <section>
             <h1>Agregar Cliente</h1>
-            <label for="id">Registre el id de su cliente</label>
-            <input type="text" id="clienteRefe" name="id" required>
-            <button type="button" id="btnRegistrarId">Registrar ID</button>
-
+            <div class="filtro">
+                <label for="id">Registre el id de su cliente</label>
+                <input type="text" id="clienteRefe" name="id" required>
+            </div>
+            <div class="btns">
+                <button class="add" type="button" id="btnRegistrarId">Registrar ID</button>
+            </div>
 
             <div class="form-cont">
             <form id="clienteForm" method="put"style="display: none;" >
@@ -69,11 +72,11 @@
                     </select>
                 </div>
 
-                <button class="add"  onclick="editarC()">Agregar Cliente</button>
+                <button class="add"  type="submit">Agregar Cliente</button>
             </form>
             </div>
         </section>
     </main>
 </body>
-<script src="/js/crudClientes.js"></script>
+<script src="/js/editClie.js"></script>
     <footer></footer>

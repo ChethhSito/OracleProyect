@@ -27,11 +27,16 @@
 
         <section>
             <h1>Editar Direccion</h1>
-            <label for="id">Direccion Id</label>
-            <input type="text" id="clienteRefe" name="id" required>
+            <div class="filtro">
+                <label for="id">Registre el id de su direccion</label>
+                <input type="text" id="direccionRefe" name="id" required>
+            </div>
+            <div class="btns">
+                <button class="add" type="button" id="btnRegistrarId">Registrar ID</button>
+            </div>
 
             <div class="form-cont">
-            <form id="direccionForm" method="put" >
+            <form id="direccionForm" method="put"style="display: none;" >
 
                 <div class="form-group">
                     <label for="direccion">Direccion:</label>
@@ -55,7 +60,7 @@
 
                 <div class="form-group">
                     <label for="clienteId">Cliente Id:</label>
-                    <input class="fechas" type="text" id="clienteId" name="clienteId" required>
+                    <input class="fechas" type="text" id="clienteId" name="clienteId" disabled style="opacity: 50%;">
                 </div>
 
                 <div class="form-group">
@@ -67,10 +72,10 @@
                     </select>
                 </div>
 
-                <button class="add"  onclick="editarD()">Editar Cliente</button>
+                <button class="add"  type="submit">Editar Cliente</button>
             </form>
             </div>
         </section>
     </main>
-    <script src="/js/crudDirecciones.js"></script>
+    <script src="/js/editDire.js"></script>
     <footer></footer>

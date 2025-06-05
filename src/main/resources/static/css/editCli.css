@@ -1,12 +1,12 @@
 body{
-    background-color: #bee9e8 ;
+    background-color: #cad2c5 ;
     font-family: sans-serif;
     margin: auto;
     overflow: hidden;
     width: 100%;
 }
 .nav-header {
-    background-color: #1b4965;
+    background-color: #2F3E46;
     display: flex;
     height: 70px;
     padding: 0;
@@ -53,7 +53,7 @@ nav ul {
 }
 .navcrud {
     width: 200px;
-    background-color: #62b6cb;
+    background-color: #354f52;
     min-height: 100vh;
     padding-top: 30px;
     box-sizing: border-box;
@@ -83,12 +83,11 @@ nav ul {
     padding: 10px;
     border-radius: 8px;
     color: black;
-    background-color:#cae9ff;
+    background-color:#CAD2C5;
     transition: background 0.2s, color 0.2s;
 }
 .ulcrud li a:hover{
-    background-color: #1b4965;
-    color: white;
+    background-color: #84A98C;
 }
 section{
     flex: 1;
@@ -127,10 +126,12 @@ select{
     width: 20%;
     padding: 15px;
     border-radius: 20px;
+    
 }
 .fechas{
     width: 10%;
 }
+
 .filtro{
    
     display: flex;
