@@ -1,12 +1,18 @@
 package com.stech.controller;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.stech.model.directions;
 import com.stech.service.direccionService;
+
 
 @RestController
 @RequestMapping("/api/directions")
@@ -25,4 +31,23 @@ public class directionController {
         //hace la conversion de la lista de direcciones a JSON 
         return direccionService.getAllDirections();
     }
+     @GetMapping("/get/{id}")
+    public directions getDireccionId(@PathVariable Long id) {
+        return direccionService.getDirectionById(id);
+    }
+    @PostMapping("/add")
+    public directions nuevaDireccion(@RequestBody directions direction) {
+        return direccionService.saveDirection(direction);
+    }
+    @PutMapping("/update/{id}")
+    public directions actualizarDirection(@PathVariable Long id,@RequestBody directions datos) {
+        return direccionService.updateDirection(id, datos);
+    }
+    @DeleteMapping("/delete/{id}")
+    public directions eliminarDirection(@PathVariable Long id) {
+        return direccionService.deleteDirection(id);
+    }
+
+    
+
 }   
